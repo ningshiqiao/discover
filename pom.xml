@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
     <groupId>registry.cn-beijing.aliyuncs.com</groupId>
-    <artifactId>haiwai</artifactId>
-	<version>1.2</version>
+    <artifactId>ningsq</artifactId>
+	<version>1.000</version>
 	<packaging>jar</packaging>
 
 	<name>discover</name>
@@ -63,7 +63,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.0.0</version>
                 <configuration>
-                    <imageName>${project.artifactId}/${project.groupId}/${project.name}:${project.version}</imageName>
+                    <imageName>${project.groupId}/${project.artifactId}/${project.name}:${project.version}</imageName>
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
